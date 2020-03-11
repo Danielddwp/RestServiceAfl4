@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RestServiceAfl4.Controllers
+namespace AfleveringOpgave4.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -19,10 +19,9 @@ namespace RestServiceAfl4.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
+        public ActionResult<int> Get(int id)
+        { return id; }
+
 
         // POST api/values
         [HttpPost]
